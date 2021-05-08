@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 	
 @RestController
-@RequestMapping("/api/passwords")
+@RequestMapping("/v1/passwords")
 @Tag(name = "password", description = "the password to check if is valid")
 public class PasswordValidatorController {
 

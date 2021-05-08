@@ -41,7 +41,7 @@ class PasswordValidatorControllerIT {
 	void setUp() {
 		RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
 		RestAssured.port = port;
-		RestAssured.basePath = "/api/passwords";
+		RestAssured.basePath = "/v1/passwords";
 		
 		loadJson();
 	}
