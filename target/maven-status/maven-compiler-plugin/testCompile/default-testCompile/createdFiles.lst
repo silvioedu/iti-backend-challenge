@@ -1,0 +1,8 @@
+br\com\itau\password\domain\rules\OneSpecialCharacterTest.class
+br\com\itau\password\domain\rules\OneDigitTest.class
+br\com\itau\password\api\model\controller\PasswordValidatorControllerIT.class
+br\com\itau\password\domain\rules\OneUppercaseLetterTest.class
+br\com\itau\password\domain\rules\OneLowercaseLetterTest.class
+br\com\itau\password\domain\rules\NineOrMoreCharactersTest.class
+br\com\itau\password\PasswordValidatorApplicationTests.class
+br\com\itau\password\domain\rules\NonRepeatingCharacterTest.class

@@ -1,0 +1,15 @@
+spring:
+
+  jackson:
+  
+    deserialization:
+      fail-on-unknown-properties: true
+      fail-on-ignored-properties: true
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health,info
+    health:
+      show-details: always

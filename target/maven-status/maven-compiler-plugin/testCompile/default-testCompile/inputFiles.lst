@@ -1,0 +1,8 @@
+E:\wksp_sts\iti-backend-challenge\src\test\java\br\com\itau\password\domain\rules\NonRepeatingCharacterTest.java
+E:\wksp_sts\iti-backend-challenge\src\test\java\br\com\itau\password\api\model\controller\PasswordValidatorControllerIT.java
+E:\wksp_sts\iti-backend-challenge\src\test\java\br\com\itau\password\domain\rules\NineOrMoreCharactersTest.java
+E:\wksp_sts\iti-backend-challenge\src\test\java\br\com\itau\password\domain\rules\OneUppercaseLetterTest.java
+E:\wksp_sts\iti-backend-challenge\src\test\java\br\com\itau\password\domain\rules\OneDigitTest.java
+E:\wksp_sts\iti-backend-challenge\src\test\java\br\com\itau\password\domain\rules\OneSpecialCharacterTest.java
+E:\wksp_sts\iti-backend-challenge\src\test\java\br\com\itau\password\domain\rules\OneLowercaseLetterTest.java
+E:\wksp_sts\iti-backend-challenge\src\test\java\br\com\itau\password\PasswordValidatorApplicationTests.java
