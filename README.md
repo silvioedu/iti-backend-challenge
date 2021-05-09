@@ -21,7 +21,18 @@ Uma API para validar se a senha fornecida pelo usuário é válida de acordo com
 
 ## Como testar
 Enviar um payload contendo o password, conforme exemplo abaixo, utilizando-se de um método POST para o endpoint /v1/passwords.
+<br><br>
+![post](img/exemplo-post.PNG)
+<br><br>
+O Service PasswordValidatorService instancia uma classe RulesChecker contendo todas as regras a serem aplicadas, cujas são implementações da interface IPasswordRules. 
 
+Após, é retornado um boolean informado se a senha é válida ou não.
 
-O Service PasswordValidatorService instancia uma classe RulesChecker contendo todas as regras a serem aplicadas, cujas são implementações da interface IPasswordRules. Para fins de teste, quando uma regra não é satisfeita, é realizado um log com o nome da regra.
+OBS.: Para fins de teste, quando uma regra não é satisfeita, é realizado um log com o nome da regra.
 
+## Teste de performance
+Utilizando-se do Postman, executei um teste em máquina local com 7 payloads diferentes e 200 requisições, totalizando 1400 chamadas ao endpoint. O log de testes está disponível ![aqui](log_performance/password-validator.postman_test_run.json) e os tempos aferidos foram:
+
+Quantidade|Mínimo (ms)|Média (ms)|Máximo (ms)
+----------|----------|----------|----------|
+1400|3,0|4,14|8,00
