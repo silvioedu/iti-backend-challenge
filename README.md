@@ -31,8 +31,13 @@ Após, é retornado um boolean informado se a senha é válida ou não.
 OBS.: Para fins de teste, quando uma regra não é satisfeita, é realizado um log com o nome da regra.
 
 ## Teste de performance
-Utilizando-se do Postman, executei um teste em máquina local com 7 payloads diferentes e 200 requisições, totalizando 1400 chamadas ao endpoint. O log de testes está disponível 
-![aqui](log_performance/password-validator.postman_test_run.json)
+Utilizando-se do Postman, executei um teste em máquina local com 7 payloads diferentes e 200 requisições, totalizando 1400 chamadas ao endpoint. 
+<br><br>
+![config](img/config_test_postman.PNG)
+<br><br>
+
+O log de testes está disponível 
+[aqui](log_performance/password-validator.postman_test_run.json)
 e os tempos aferidos foram:
 
 Quantidade|Mínimo (ms)|Média (ms)|Máximo (ms)
