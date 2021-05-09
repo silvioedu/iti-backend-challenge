@@ -11,9 +11,17 @@ Uma API para validar se a senha fornecida pelo usuário é válida de acordo com
   - Espaços em branco não devem ser considerados como caracteres válidos
 - Não possuir caracteres repetidos dentro do conjunto
 
-## Documentação
+## Documentação da API
 - HTML: http://localhost:8080/swagger-ui.html
 - YAML: http://localhost:8080/v3/api-docs.yaml
 
-## Requisitos
+## Tecnologias
 - Java 1.8
+- Springboot
+
+## Como testar
+Enviar um payload contendo o password, conforme exemplo abaixo, utilizando-se de um método POST para o endpoint /v1/passwords.
+
+
+O Service PasswordValidatorService instancia uma classe RulesChecker contendo todas as regras a serem aplicadas, cujas são implementações da interface IPasswordRules. Para fins de teste, quando uma regra não é satisfeita, é realizado um log com o nome da regra.
+
