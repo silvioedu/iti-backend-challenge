@@ -24,7 +24,13 @@ Enviar um payload contendo o password, conforme exemplo abaixo, utilizando-se de
 <br><br>
 ![post](img/exemplo-post.PNG)
 <br><br>
-O Service PasswordValidatorService instancia uma classe RulesChecker contendo todas as regras a serem aplicadas, cujas são implementações da interface IPasswordRules. 
+
+
+## Diagrama
+A requisição chega pela classe br.com.itau.password.api.model.controller.PasswordValidatorController e encaminha para o Serviço br.com.itau.password.domain.service.PasswordValidatorService. O mesmo solicita a aplicação das regras para a classe br.com.itau.password.domain.rules.checker.RulesChecker.
+<br><br>
+![diagram](img/diagram.png)
+<br><br>
 
 Após, é retornado um boolean informado se a senha é válida ou não.
 
