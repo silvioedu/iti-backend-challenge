@@ -1,0 +1,26 @@
+participant Client
+participant PasswordValidatorController
+participant PasswordValidatorService
+participant RulesChecker
+
+activate Client
+Client->PasswordValidatorController: POST {"password": "AbTp9!fo"}
+
+activate PasswordValidatorController
+PasswordValidatorController->PasswordValidatorService: isvalid("AbTp9!fo")
+
+activate PasswordValidatorService
+PasswordValidatorService->RulesChecker: isvalid("AbTp9!fo")
+
+activate RulesChecker
+RulesChecker->RulesChecker: verify if is valid
+deactivate RulesChecker
+
+PasswordValidatorService<--RulesChecker: response: True/False
+deactivate PasswordValidatorService
+
+PasswordValidatorController<--PasswordValidatorService: response: True/False
+
+Client<--PasswordValidatorController: Status: 200 / response: True/False
+deactivate PasswordValidatorController
+deactivate Client
